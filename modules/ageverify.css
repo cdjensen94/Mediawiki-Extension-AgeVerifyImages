@@ -1,0 +1,10 @@
+#age-verify-modal input {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+#age-verify-modal button {
+    padding: 5px 10px;
+    cursor: pointer;
+}

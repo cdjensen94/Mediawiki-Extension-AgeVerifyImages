@@ -1,0 +1,7 @@
+{
+    "@metadata": {
+        "authors": ["cdjensen94"]
+    },
+    "ageverifyimages-desc": "Adds age verification for certain images.",
+	"age-warning": "Are you +17 Age?"
+}

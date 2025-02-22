@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "AgeVerifyImages",
+    "version": "1.0",
+    "author": ["Your Name"],
+    "url": "https://yourwiki.org",
+    "description": "Adds age verification before displaying certain images.",
+    "type": "parserhook",
+    "requires": {
+        "MediaWiki": ">=1.43.0"
+    },
+    "AutoloadClasses": {
+        "AgeVerifyImages\\AgeVerifyHandler": "includes/AgeVerifyHandler.php"
+    },
+    "Hooks": {
+        "ParserFirstCallInit": "AgeVerifyImages\\AgeVerifyHandler::onParserFirstCallInit"
+    },
+    "ResourceModules": {
+        "ext.AgeVerifyImages": {
+            "localBasePath": "",
+            "remoteExtPath": "AgeVerifyImages",
+            "scripts": ["modules/ageverify.js"],
+            "styles": ["modules/ageverify.css"],
+            "position": "top"
+        }
+    },
+    "MessagesDirs": {
+        "AgeVerifyImages": ["i18n"]
+    }
+}
